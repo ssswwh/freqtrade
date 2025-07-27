@@ -600,7 +600,7 @@ def download_data(
     progress_tracker: CustomProgress | None = None,
 ) -> None:
     """
-    Download data function. Used from both cli and API.
+    下载数据, 可以通过命令行和API调用
     """
     timerange = TimeRange()
     if "days" in config and config["days"] is not None:

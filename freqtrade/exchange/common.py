@@ -48,22 +48,10 @@ MAP_EXCHANGE_CHILDCLASS = {
     "binanceus": "binance",
     "binanceje": "binance",
     "binanceusdm": "binance",
-    "okex": "okx",
-    "myokx": "okx",
-    "gateio": "gate",
-    "huboi": "htx",
 }
 
 SUPPORTED_EXCHANGES = [
     "binance",
-    "bingx",
-    "bitmart",
-    "bybit",
-    "gate",
-    "htx",
-    "hyperliquid",
-    "kraken",
-    "okx",
 ]
 
 # either the main, or replacement methods (array) is required

@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 
 class ExchangeResolver(IResolver):
     """
-    This class contains all the logic to load a custom exchange class
+    该模块包含所有加载自定义交易所的逻辑
     """
 
     object_type = Exchange
@@ -31,9 +31,9 @@ class ExchangeResolver(IResolver):
         load_leverage_tiers: bool = False,
     ) -> Exchange:
         """
-        Load the custom class from config parameter
-        :param exchange_name: name of the Exchange to load
-        :param config: configuration dictionary
+        从配置参数加载自定义交易所
+        :param exchange_name: 需要加载的交易所名称
+        :param config: 配置字典
         """
         exchange_name: str = config["exchange"]["name"]
         # Map exchange name to avoid duplicate classes for identical exchanges

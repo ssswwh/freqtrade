@@ -3,7 +3,7 @@ import secrets
 from pathlib import Path
 from typing import Any
 
-from questionary import Separator, prompt
+from questionary import prompt
 
 from freqtrade.constants import UNLIMITED_STAKE_AMOUNT
 from freqtrade.exceptions import OperationalException
@@ -110,14 +110,6 @@ def ask_user_config() -> dict[str, Any]:
             "choices": [
                 "binance",
                 "binanceus",
-                "bingx",
-                "gate",
-                "htx",
-                "kraken",
-                "kucoin",
-                "okx",
-                Separator("------------------"),
-                "other",
             ],
         },
         {
